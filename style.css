@@ -1,33 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
+:root {
+    --default-font-color: #363636;
+    
+    --header-background-color: #ffffff;
+    
+    --header-boundary-margin: 4rem;
+    
+    --home-background-color: #ffffff;
+
+    --primary-color: #707070;
+    --secondary-color: #bbbbbb;
+    
+    --font-color: #363636;
+    
+    --header-font-weight: 600;
+
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root {
-    --body-color: #4B4B4B;
-    --primary-color: #707070;
-    --secondary-color: #bbbbbb;
-    --header-border-color: #363636;
-    --font-color: #363636;
-    --header-boundary-margin: 4rem;
-    --header-font-weight: 600;
-
+    color: var(--default-font-color);
 }
 
 /*
     Navigation bar
 */
 nav {
+    background-color: var(--header-background-color);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: large;
-    color: var(--header-border-color);
+    
 }
 
 nav h2 {
@@ -49,24 +60,24 @@ nav li {
     margin: 0.5rem;
 }
 
+nav a {
+    color: var(--default-font-color);
+    text-decoration: none;
+    font-weight: var(--header-font-weight);
+}
+
 nav a:hover {
     color: rgb(20, 79, 215);
 }
 
-nav a {
-    color: var(--header-border-color);
-    text-decoration: none;
-    font-weight: var(--header-font-weight);
-}
 
 /*
     Home section
 */
 #home {
     border-radius: 0.5rem;
-    background-color: #f7f7f7;
     color: var(--header-border-color);
-    height: 45rem;
+    height: 35rem;
     font-size: 2rem;
     padding-inline: 20rem;
     display: flex;
@@ -113,9 +124,64 @@ h1 {
     text-decoration: none;
 }
 
+#home a:hover {
+    color: rgb(20, 79, 215);
+}
+
+#home svg:hover {
+    color: rgb(20, 79, 215);
+}
+
 #home p {
     margin-block: 1.5rem;
     font-size: 1.5rem;
+}
+
+/*
+    About Me
+*/
+
+#about {
+    background-color: #f9f9f9;
+    
+    border-radius: 0.5rem;
+    color: var(--header-border-color);
+    height: 35rem;
+    font-size: 1.5rem;
+    padding-inline: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-container {
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+#about ul {
+    display: flex;
+    align-items: center;
+}
+
+#about li {
+    list-style-type: none;
+    margin-inline: 1rem;
+    font-size: 0;
+}
+
+hr {    
+    margin-block: 1rem;
+}
+
+#about p {
+    font-size: 1.1rem;
+}
+
+.tech-p {
+    margin-block: auto;
 }
 
 .tech {
@@ -123,21 +189,81 @@ h1 {
     justify-content: center;
 }
 
-#home ul {
+/*
+    Work Experience
+*/
+
+#work {
+    border-radius: 0.5rem;
+    color: var(--header-border-color);
+    height: 65rem;
+    font-size: 1.5rem;
+    padding-inline: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.work-container {
+    margin-top: 0.5rem;
+}
+
+#work img {
+    height: 40px;
+}
+
+.ge-work {
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
-#home li {
-    list-style-type: none;
-    margin-inline: 1rem;
-    font-size: 0;
-}
-
-hr {    
+.exp {
     margin-block: 2rem;
+    font-size: 1rem;
 }
 
-#home a:hover {
+/*
+    Projecs
+*/
+
+#projects {
+    background-color: #f9f9f9;
+    
+    border-radius: 0.5rem;
+    color: var(--header-border-color);
+    height: 85rem;
+    font-size: 1.5rem;
+    padding-inline: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-container {
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+}
+
+.projects-gif {
+    height: 400px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.project-tech {
+
+}
+
+#projects a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+#projects a:hover {
     color: rgb(20, 79, 215);
 }
