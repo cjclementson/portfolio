@@ -10,14 +10,16 @@
 <body>
     <div>
         <nav>
-            <h2>Clem.dev</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-bar">
+                <h2><a href="#"> Clem.dev</a></h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
         <section id="home">
             <div>
@@ -38,7 +40,7 @@
                         </div>
                     </div>
                     <div class="home-right-card">
-                        <img class="photo" src="Clement Clementson.JPG" alt="">
+                        <img class="photo" src="Clement Clementson.png" alt="">
                     </div>
                 </div>
                 
@@ -49,11 +51,14 @@
                 <h3>About Me</h3>
                 <div class="about-container">
                     <p>
-                        I am a Senior Software Engineer with over 14 years of experience. I have successfully contributed most of my experience building monitoring solutions and data science tools to Industrial Engineering and the IIOT (industrial internet of things).  As a seasoned developer, I have a passion for learning and have a proven track record of adapting to the need of the business. For the last 10 years I have been working remotely as part multiple teams globally distributed spanning SA, UK, India, USA, Canada, and more. I am committed to leveraging my background and skills to make a significant impact and drive success in any environment.
+                        I am a Senior Software Engineer with over a decade of experience. I have successfully contributed most of my experience building monitoring solutions and data science tools to Industrial Engineering and the IIOT (industrial internet of things).  As a seasoned developer, I have a passion for learning and have a proven track record of adapting to the need of the business. For the last 5 years I have been working remotely as part of multiple teams globally distributed spanning SA, UK, India, USA, Canada, and more. I am committed to leveraging my background and skills to make a significant impact and drive success in any environment.
+                        <br>
+                        <br>
+                        In my pursuit of a new role, I have started dedicating my time to studying machine learning. I have been working in the AI space building monitoring solutions for process engineers and tools for data scientists, which aligns perfectly with my goals of understanding the underlying ML algorithms.
                     </p>
                     <hr>
                     <div class="tech">
-                        <p class="tech-p">Tech Stack |</p>
+                        <p class="tech-p">Technologies</p>
                         <ul>
                             <li><img src="https://skillicons.dev/icons?i=html,css,js&theme=light" alt="skill-icon"></li>
                             <li><img src="https://skillicons.dev/icons?i=java,spring,cs,dotnet,cpp,python&theme=light" alt="skill-icon"></li>
@@ -68,40 +73,98 @@
                 <h3>Work Experience</h3>
                 <div class="work-container">
                     <div class="ge-work">
-                        <img src="General_Electric_logo.svg" alt="ge-logo">
+                        <img src="machine-learning.svg" alt="ge-logo">
                         <h4>
-                            GE Digital - June 2017 - July 2023
+                            Studying Machine Learning
                         </h4>
+                        <p>
+                            January 2024 - Present
+                        </p>
+                    </div>
+                    <div class="ge-work">
+                        <img src="plane.svg" alt="ge-logo">
+                        <h4>
+                            Moved from South Africa to the UAE
+                        </h4>
+                        <p>
+                            August 2023 - December 2023
+                        </p>
+                    </div>
+                    <div class="ge-work">
+                        <img src="general-electric-logo.svg" alt="ge-logo">
+                        <h4>
+                            GE Digital
+                        </h4>
+                        <p>
+                            June 2011 - July 2023
+                        </p>
                     </div>
                     <div class="exp">
                         <h4>
                             Senior Software Engineer
                         </h4>
-                        <p>
-                            • Led software development initiative as subject matter expert and primary point-of-contact for project management staff.
-• Perform code reviews on team members' work to identify bugs and ensure implementations were testable and maintainable.
-• Introduced automated testing protocols, shortening software validation timeframes. 
-• Provided technical support using knowledge of complex technology to solve problems and support new projects.
-• Updated job knowledge by studying state-of-the-art development tools and programming techniques and participating in educational opportunities.
-• Worked with software development and testing team members to design and develop robust solutions to meet client requirements for functionality, scalability, and performance.
-                        </p>
+                        <div class="project">
+                            <p>
+                                Cloud Data Import REST service
+                                <br>
+                                • Designed and implemented a data import REST microservice in Java (Springboot) that is part of a hybrid cloud monitoring solution.
+                                <br>
+                                • This service is the bridge between on-premise analytics aggregating raw data from the plant, taking that aggregated data and importing it into a data warehouse for further processing.
+                                <br>
+                                • Enhanced security by integrating SAST, DAST, and Open Source library scans into an automated build pipeline.
+                                <br>
+                                <b>Tech stack</b> | Java | SpringBoot | AWS S3 | AWS SNS | Jenkins | SonarQube | Tinfoil | Whitesource |
+                            </p>
+                        </div>
+                        <div class="project">
+                            <p>
+                                Grid monitoring solution for Qatar’s smart city (FIFA World Cup 2022)
+                                <br>
+                                • Designed, implemented and secured a microservice in .Net Core using ASP.NET Web API that is part of a power grid monitoring solution for Qatar’s Smart City project.
+                                <br>
+                                • Developed layout algorithms for displaying detailed schematic views of the electric power grid.
+                                <br>
+                                <b>Tech stack</b> | C++ | .NET & .NET Core | ASP .NET Web API | MSAGL |
+                            </p>
+                        </div>
+                        <div class="project">
+                            <p>
+                                Edge Analytics engine
+                                <br>
+                                • Part of a team that developed a multiplatform containerized Edge (on-premise) Analytics tool that performs streaming analytics on time series data.
+                                <br>
+                                • Designed and implemented an automated dockerized testing framework.
+                                <br>
+                                <b>Tech stack</b> | C++ | Docker | MQTT | Googletest | Jenkins | gcov |
+                            </p>
+                        </div>
                     </div>
                     <div class="exp">
                         <h4>
                             Software Engineer
                         </h4>
-                        <p>
-                            • Led software development initiative as subject matter expert and primary point-of-contact for project management staff.
-• Perform code reviews on team members' work to identify bugs and ensure implementations were testable and maintainable.
-• Introduced automated testing protocols, shortening software validation timeframes. 
-• Provided technical support using knowledge of complex technology to solve problems and support new projects.
-• Updated job knowledge by studying state-of-the-art development tools and programming techniques and participating in educational opportunities.
-• Worked with software development and testing team members to design and develop robust solutions to meet client requirements for functionality, scalability, and performance.                            
-                        </p>
-                    </div>
-                    <div class="tech">
-                        <ul>
-                        </ul>
+                        <div class="project">
+                            <p>
+                                Data query engine for web application dashboards
+                                <br>
+                                • Worked as part of a globally distributed team to implement a data query engine for web application dashboards. Designed and implemented a Redis caching service that flattened the data of a legacy application that stores millions of records. Reduced query time from 10 minutes to less than 5 seconds.
+                                <br>
+                                <b>Tech stack</b> | OSGi framework | Java | Hibernate | Data Direct | Redis | MSSQL | 
+                            </p>
+                        </div>
+                        <div class="project">
+                            <p>
+                                Control Loop Performance Monitoring
+                                <br>
+                                • Designed and led the development of a Control Loop Monitoring application.
+                                <br>
+                                • Built a calculation engine that runs on a schedule and generates aggregated statistics over a defined shift.
+                                <br>
+                                • The aggregated statistics were consumed by a web application that display reports targeted for Process Control Engineers.
+                                <br>
+                                <b>Tech stack</b> | C++ | .NET SOAP Web Services | ASP.NET | JQuery | HTML | CSS | MSSQL | SSR |
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,6 +210,36 @@
                 </div>
             </div>
         </section>
+        <section id="contact">
+            <div>
+                <h3>Contact</h3>
+                <div>
+                    <div class="contact-container">
+                        <div class="contact-details">
+                            <span class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-map-search"><path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path><path d="M9 4v13"></path><path d="M15 7v5"></path><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M20.2 20.2l1.8 1.8"></path></svg>
+                            </span>
+                            <div class="contact-words">
+                                <h4>Location</h4>
+                                <p>UAE</p>
+                            </div>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-mail"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path><path d="M3 7l9 6l9 -6"></path></svg>
+                            </span>
+                            <div class="contact-words">
+                                <h4>Mail</h4>
+                                <a href="mailto:clementclementson@gmail.com"><p>clementclementson@gmail.com</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h3>Copyright © 2024. All rights are reserved</h3>
+        </footer>
     </div>
 </body>
 </html>
